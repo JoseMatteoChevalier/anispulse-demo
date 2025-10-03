@@ -63,7 +63,7 @@ export function ProjectCard({
     setInsightsError(null);
 
     try {
-      const response = await fetch('https://anispulse2.onrender.com/api/gemini-quick-insights', {
+      const response = await fetch('https://anispulse-demo.onrender.com/api/gemini-quick-insights', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

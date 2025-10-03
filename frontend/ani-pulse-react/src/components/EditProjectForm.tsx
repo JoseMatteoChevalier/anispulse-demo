@@ -110,7 +110,7 @@ export function EditProjectForm({ initialData, onSubmit, onCancel, onDelete }: E
 
     if (confirm(confirmMessage)) {
       try {
-        const response = await fetch(`https://anispulse2.onrender.com/api/projects/${project.id}`, {
+        const response = await fetch(`https://anispulse-demo.onrender.com/api/projects/${project.id}`, {
           method: 'DELETE',
           headers: { 'Content-Type': 'application/json' }
         });

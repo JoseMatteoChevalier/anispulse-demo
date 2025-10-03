@@ -319,7 +319,7 @@ function MonteCarloAnalysis({ project, mode, onProjectUpdate }: { project: any; 
     });
 
     try {
-      const response = await fetch('https://anispulse2.onrender.com/api/monte-carlo-analysis', {
+      const response = await fetch('https://anispulse-demo.onrender.com/api/monte-carlo-analysis', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestData)
@@ -805,7 +805,7 @@ SDEAnalysis({
         lastModified: new Date().toISOString()
       };
 
-      const response = await fetch('https://anispulse2.onrender.com/api/projects', {
+      const response = await fetch('https://anispulse-demo.onrender.com/api/projects', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(projectData)
@@ -836,7 +836,7 @@ SDEAnalysis({
     return new Promise((resolve, reject) => {
       const pollInterval = setInterval(async () => {
         try {
-          const statusResponse = await fetch(`https://anispulse2.onrender.com/api/sde-status/${jobId}`);
+          const statusResponse = await fetch(`https://anispulse-demo.onrender.com/api/sde-status/${jobId}`);
           const status = await statusResponse.json();
 
           if (status.status === 'completed') {
@@ -863,7 +863,7 @@ SDEAnalysis({
     setProgress("Initializing SDE analysis...");
 
     try {
-      const response = await fetch('https://anispulse2.onrender.com/api/sde-analysis', {
+      const response = await fetch('https://anispulse-demo.onrender.com/api/sde-analysis', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -1387,7 +1387,7 @@ function PDEAnalysis({ project, mode, onProjectUpdate }: { project: any; mode: "
 
     setLoading(true);
     try {
-      const response = await fetch('https://anispulse2.onrender.com/api/enhanced-pde-analysis', {
+      const response = await fetch('https://anispulse-demo.onrender.com/api/enhanced-pde-analysis', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestData)

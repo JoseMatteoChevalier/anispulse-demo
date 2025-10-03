@@ -139,7 +139,7 @@ export function Dashboard() {
 
             console.log('Sending project data:', projectData);
 
-            const response = await fetch('https://anispulse2.onrender.com/api/projects', {
+            const response = await fetch('https://anispulse-demo.onrender.com/api/projects', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(projectData)
@@ -168,8 +168,8 @@ export function Dashboard() {
 
     const loadProjects = async () => {
         try {
-            console.log('Loading projects from:', 'https://anispulse2.onrender.com/api/projects');
-            const response = await fetch('https://anispulse2.onrender.com/api/projects');
+            console.log('Loading projects from:', 'https://anispulse-demo.onrender.com/api/projects');
+            const response = await fetch('https://anispulse-demo.onrender.com/api/projects');
             console.log('Response status:', response.status);
 
             const data = await response.json();
@@ -277,7 +277,7 @@ const handleSaveProject = async (project: Project) => {
     try {
         // Call Foundation Engine to calculate baseline schedule
         console.log('Calling Foundation Engine...');
-        const foundationResponse = await fetch('https://anispulse2.onrender.com/api/calculate-project', {
+        const foundationResponse = await fetch('https://anispulse-demo.onrender.com/api/calculate-project', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
