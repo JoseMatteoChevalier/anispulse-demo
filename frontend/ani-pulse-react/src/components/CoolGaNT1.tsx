@@ -18,7 +18,7 @@ const GanttChart = ({ project, onBack }) => {
         if (!project?.foundationResults) {
             return {
                 project_name: "Large Software Development Project",
-                project_start_date: "2025-01-01",
+                project_start_date: "2025-10-13",
                 project_metrics: {
                     total_duration_days: 150,
                     overall_risk_level: "Medium-High",

@@ -244,7 +244,7 @@ const sampleProjects: Project[] = [
                     {id:"15", name:"Production Deployment", completion_pct:0, user_risk_rating:5, duration_days:3, predecessors:["13", "14"]}
 
                 ],
-    project_start_date:""}
+    project_start_date:"2025-10-13"}
 ];
 
 export function Dashboard() {
