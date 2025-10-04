@@ -12,7 +12,7 @@
 - **Risk Analytics Dashboard** - Complex data visualization
 - **Responsive Design** - Mobile-first approach
 
-### Mathematical Modeling (Architecture Only)
+### Mathematical Modeling (Architecture Only/Available for Demo Upon Request)
 - **Foundation Engine** - Critical Path Method implementation
 - **Monte Carlo Simulation** - 10,000+ iteration probabilistic analysis
 - **Stochastic Differential Equations** - Continuous risk modeling
@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-**Frontend Demo:** [Coming Soon]
+**Frontend Demo:** https://anispulse-demo.vercel.app
 **GitHub:** https://github.com/JoseMatteoChevalier/anispulse-demo
 
 ## Technology Stack
