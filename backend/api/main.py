@@ -46,6 +46,38 @@ def calculate_basic_timeline(project_data: Dict[str, Any]):
         demo_tasks.append({
             "id": task.get("id"),
             "name": task.get("name"),
+            "duration_days": task.get("duration_days", 5),
+            "predecessors": task.get("predecessors", []),
+            "scheduled_start_day": i * 3,
+            "scheduled_finish_day": i * 3 + task.get("duration_days", 5),
+            "is_critical": i < 2,
+            "risk_level": "Medium",
+            "risk_score": 35,
+            "float_days": 0 if i < 2 else 2,
+            "blocks_tasks": [],
+            "blocked_by_tasks": task.get("predecessors", [])
+        })
+    
+    return {
+        "success": True,
+        "project_name": project_data.get("project_name", "Demo Project"),
+        "project_start_date": project_data.get("project_start_date"),
+        "project_metrics": {
+            "total_duration_days": len(tasks) * 3 + max([task.get("duration_days", 5) for task in tasks], default=5),
+            "overall_risk_level": "Medium",
+            "critical_path_ids": [tasks[i].get("id") for i in range(min(2, len(tasks)))],
+            "total_tasks": len(tasks)
+        },
+        "tasks": demo_tasks,
+        "demo_mode": True
+    }    """Demo timeline calculation"""
+    tasks = project_data.get("tasks", [])
+    
+    demo_tasks = []
+    for i, task in enumerate(tasks):
+        demo_tasks.append({
+            "id": task.get("id"),
+            "name": task.get("name"),
             "scheduled_start_day": i * 2,
             "scheduled_finish_day": i * 2 + task.get("duration_days", 5),
             "is_critical": i < 2,
