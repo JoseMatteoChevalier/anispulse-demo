@@ -16,7 +16,6 @@ interface DashboardProps {
 
 // Sample projects using clean TypeScript structure
 const sampleProjects: Project[] = [
-    const sampleProjects: Project[] = [
         {
           name: "Website Redesign",
           tasks: [
