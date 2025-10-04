@@ -2,7 +2,7 @@
 
 > **Portfolio Demonstration** - Frontend showcase with mathematical modeling architecture
 
-![AnisPulse Demo](https://via.placeholder.com/800x400/2D1F1F/F4E4BC?text=AnisPulse+Demo)
+![Dashboard Overview](./screenshots/dashboard-overview.jpeg)
 
 ## Features Demonstrated
 
@@ -20,8 +20,21 @@
 
 ## Live Demo
 
-**Frontend Demo:** https://anispulse-demo.vercel.app
+**Frontend:** [https://anispulse-demo.vercel.app](https://anispulse-demo.vercel.app)
 **GitHub:** https://github.com/JoseMatteoChevalier/anispulse-demo
+
+## 🎨 Features
+
+### Interactive GANTT Chart
+![GANTT Timeline](./screenshots/gantt-timeline.jpeg)
+
+- Custom-built timeline visualization
+- Critical path highlighting
+- Risk-based color coding
+- Interactive task details
+
+![Analytics Interface](./screenshots/gantt-analytics-interface.jpeg)
+*Analytics overlay toggles - Advanced features available upon request*
 
 ## Technology Stack
 
@@ -29,6 +42,11 @@
 - **Visualization:** Chart.js, Custom GANTT components
 - **Backend:** FastAPI, Python (demo endpoints)
 - **Mathematical Engines:** Proprietary algorithms (not included)
+
+## 📧 Contact
+Interested in the full system with advanced analytics?
+- LinkedIn: [http://linkedin.com/in/josematteo](http://linkedin.com/in/josematteo)
+- Email: j.e.matteo.chevalier@gmail.com
 
 ## Quick Start
 ```bash
