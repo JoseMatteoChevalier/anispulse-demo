@@ -16,27 +16,214 @@ interface DashboardProps {
 
 // Sample projects using clean TypeScript structure
 const sampleProjects: Project[] = [
-  {
-    name: "Website Redesign",
-    tasks: [
-      { id: "1", name: "UI/UX Design", duration_days: 14, predecessors: [], user_risk_rating: 1.5 },
-      { id: "2", name: "Frontend Development", duration_days: 21, predecessors: ["1"], user_risk_rating: 2.0 },
-      { id: "3", name: "Backend Integration", duration_days: 10, predecessors: ["2"], user_risk_rating: 1.0 },
-      { id: "4", name: "Testing & QA", duration_days: 7, predecessors: ["3"], user_risk_rating: 2.5 },
-    ],
-      project_start_date:""
-  },
-  {
-    name: "Mobile App Launch",
-    tasks: [
-      { id: "1", name: "App Architecture", duration_days: 10, predecessors: [], user_risk_rating: 1.0 },
-      { id: "2", name: "Core Features", duration_days: 28, predecessors: ["1"], user_risk_rating: 3.0 },
-      { id: "3", name: "API Integration", duration_days: 14, predecessors: ["2"], user_risk_rating: 2.0 },
-      { id: "4", name: "Testing", duration_days: 10, predecessors: ["3"], user_risk_rating: 1.5 },
-      { id: "5", name: "App Store Deploy", duration_days: 5, predecessors: ["4"], user_risk_rating: 2.5 }
-    ],
-      project_start_date:""
-  },
+    const sampleProjects: Project[] = [
+        {
+          name: "Website Redesign",
+          tasks: [
+            { id: "1", name: "UI/UX Design", duration_days: 14, predecessors: [], user_risk_rating: 1.5 },
+            { id: "2", name: "Frontend Development", duration_days: 21, predecessors: ["1"], user_risk_rating: 2.0 },
+            { id: "3", name: "Backend Integration", duration_days: 10, predecessors: ["2"], user_risk_rating: 1.0 },
+            { id: "4", name: "Testing & QA", duration_days: 7, predecessors: ["3"], user_risk_rating: 2.5 },
+          ],
+          project_start_date: "2025-01-15",
+         
+          foundationResults: {
+            success: true,
+            project_name: "Website Redesign",
+            project_start_date: "2025-01-15",
+            analysis_mode: "baseline",
+            use_business_days: false,
+            calculation_timestamp: "2025-01-15T10:00:00Z",
+            project_metrics: {
+              total_duration_days: 52,
+              overall_risk_level: "Medium",
+              high_risk_task_count: 0,
+              critical_path_ids: ["1", "2", "3", "4"],
+              total_tasks: 4
+            },
+            tasks: [
+              {
+                id: "1",
+                name: "UI/UX Design",
+                duration_days: 14,
+                predecessors: [],
+                scheduled_start_day: 0,
+                scheduled_finish_day: 14,
+                actual_start_date: "2025-01-15",
+                actual_end_date: "2025-01-29",
+                risk_level: "Low",
+                risk_score: 25,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: ["2"],
+                blocked_by_tasks: []
+              },
+              {
+                id: "2",
+                name: "Frontend Development",
+                duration_days: 21,
+                predecessors: ["1"],
+                scheduled_start_day: 14,
+                scheduled_finish_day: 35,
+                actual_start_date: "2025-01-29",
+                actual_end_date: "2025-02-19",
+                risk_level: "Medium",
+                risk_score: 40,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: ["3"],
+                blocked_by_tasks: ["1"]
+              },
+              {
+                id: "3",
+                name: "Backend Integration",
+                duration_days: 10,
+                predecessors: ["2"],
+                scheduled_start_day: 35,
+                scheduled_finish_day: 45,
+                actual_start_date: "2025-02-19",
+                actual_end_date: "2025-03-01",
+                risk_level: "Low",
+                risk_score: 20,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: ["4"],
+                blocked_by_tasks: ["2"]
+              },
+              {
+                id: "4",
+                name: "Testing & QA",
+                duration_days: 7,
+                predecessors: ["3"],
+                scheduled_start_day: 45,
+                scheduled_finish_day: 52,
+                actual_start_date: "2025-03-01",
+                actual_end_date: "2025-03-08",
+                risk_level: "Medium",
+                risk_score: 45,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: [],
+                blocked_by_tasks: ["3"]
+              }
+            ],
+            calculation_method: "Foundation Engine v1.0",
+            algorithms_used: ["CPM", "Basic Risk Analysis"],
+            confidence_level: 0.85
+          }
+        },
+        {
+          name: "Mobile App Launch",
+          tasks: [
+            { id: "1", name: "App Architecture", duration_days: 10, predecessors: [], user_risk_rating: 1.0 },
+            { id: "2", name: "Core Features", duration_days: 28, predecessors: ["1"], user_risk_rating: 3.0 },
+            { id: "3", name: "API Integration", duration_days: 14, predecessors: ["2"], user_risk_rating: 2.0 },
+            { id: "4", name: "Testing", duration_days: 10, predecessors: ["3"], user_risk_rating: 1.5 },
+            { id: "5", name: "App Store Deploy", duration_days: 5, predecessors: ["4"], user_risk_rating: 2.5 }
+          ],
+          project_start_date: "2025-02-01",
+          
+          foundationResults: {
+            success: true,
+            project_name: "Mobile App Launch",
+            project_start_date: "2025-02-01",
+            analysis_mode: "baseline",
+            use_business_days: false,
+            calculation_timestamp: "2025-02-01T10:00:00Z",
+            project_metrics: {
+              total_duration_days: 67,
+              overall_risk_level: "Medium-High",
+              high_risk_task_count: 1,
+              critical_path_ids: ["1", "2", "3", "4", "5"],
+              total_tasks: 5
+            },
+            tasks: [
+              {
+                id: "1",
+                name: "App Architecture",
+                duration_days: 10,
+                predecessors: [],
+                scheduled_start_day: 0,
+                scheduled_finish_day: 10,
+                actual_start_date: "2025-02-01",
+                actual_end_date: "2025-02-11",
+                risk_level: "Low",
+                risk_score: 20,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: ["2"],
+                blocked_by_tasks: []
+              },
+              {
+                id: "2",
+                name: "Core Features",
+                duration_days: 28,
+                predecessors: ["1"],
+                scheduled_start_day: 10,
+                scheduled_finish_day: 38,
+                actual_start_date: "2025-02-11",
+                actual_end_date: "2025-03-11",
+                risk_level: "High",
+                risk_score: 70,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: ["3"],
+                blocked_by_tasks: ["1"]
+              },
+              {
+                id: "3",
+                name: "API Integration",
+                duration_days: 14,
+                predecessors: ["2"],
+                scheduled_start_day: 38,
+                scheduled_finish_day: 52,
+                actual_start_date: "2025-03-11",
+                actual_end_date: "2025-03-25",
+                risk_level: "Medium",
+                risk_score: 40,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: ["4"],
+                blocked_by_tasks: ["2"]
+              },
+              {
+                id: "4",
+                name: "Testing",
+                duration_days: 10,
+                predecessors: ["3"],
+                scheduled_start_day: 52,
+                scheduled_finish_day: 62,
+                actual_start_date: "2025-03-25",
+                actual_end_date: "2025-04-04",
+                risk_level: "Low",
+                risk_score: 25,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: ["5"],
+                blocked_by_tasks: ["3"]
+              },
+              {
+                id: "5",
+                name: "App Store Deploy",
+                duration_days: 5,
+                predecessors: ["4"],
+                scheduled_start_day: 62,
+                scheduled_finish_day: 67,
+                actual_start_date: "2025-04-04",
+                actual_end_date: "2025-04-09",
+                risk_level: "Medium",
+                risk_score: 45,
+                is_critical: true,
+                float_days: 0,
+                blocks_tasks: [],
+                blocked_by_tasks: ["4"]
+              }
+            ],
+            calculation_method: "Foundation Engine v1.0",
+            algorithms_used: ["CPM", "Basic Risk Analysis"],
+            confidence_level: 0.85
+          }
+        },
 
 
     {name:"Large Software Development Project",
