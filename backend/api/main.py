@@ -69,8 +69,8 @@ def calculate_basic_timeline(project_data: Dict[str, Any]):
             "total_tasks": len(tasks)
         },
         "tasks": demo_tasks,
-        "demo_mode": True
-    }    """Demo timeline calculation"""
+        "demo_mode": True}    
+        # """Demo timeline calculation"""
     tasks = project_data.get("tasks", [])
     
     demo_tasks = []

@@ -1,5 +1,5 @@
 // src/api.js
-const API_BASE_URL = 'https://anispulse2.onrender.com/';
+const API_BASE_URL = 'https://anispulse-demo.onrender.com/';
 
 export const calculateProject = async (projectData) => {
   try {
