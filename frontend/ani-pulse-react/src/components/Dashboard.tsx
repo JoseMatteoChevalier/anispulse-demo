@@ -646,7 +646,7 @@ console.log('Modal triggered:', !!editingProject);
 
 
                     {/* Arcane Action Buttons */}
-                    <div className="flex items-center gap-3">
+                    {/* <div className="flex items-center gap-3">
                         {/* Search Button (placeholder) */}
                         <button
                             className="p-3 rounded-lg transition-all duration-200 hover:scale-105 relative group"
@@ -719,7 +719,7 @@ console.log('Modal triggered:', !!editingProject);
                                 style={{background: 'radial-gradient(circle, #D4AF37 0%, transparent 70%)'}}
                             />
                         </button>
-                    </div>
+                    {/* </div> */}
                 </div>
             </header>
 
