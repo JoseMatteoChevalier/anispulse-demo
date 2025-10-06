@@ -1,11 +1,13 @@
 
 
 import {ArrowLeft, Calendar, User, Activity, CheckCircle, Clock, AlertCircle, LucideZap, Zap} from "lucide-react";
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { BarChart3 } from "lucide-react"
 import { Project, Task } from "../../types/index";
 import { RiskAnalytics } from "./RiskAnalytics" // Update this path
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+
+
 
 interface TaskDetailViewProps {
   project: Project;
@@ -793,12 +795,19 @@ function TaskEditForm({ task, onSave, onCancel }: {
     </div>
   );
 }
-// HEre
+// Core Function
 export function TaskDetailView({ project, onBack }: TaskDetailViewProps) {
   const [showRiskAnalytics, setShowRiskAnalytics] = useState(false);
   const [currentProject, setCurrentProject] = useState(project);
 
-  // CONDITIONAL RENDER MUST BE FIRST
+
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
+
+  // 
   if (showRiskAnalytics) {
     return (
       <RiskAnalytics
