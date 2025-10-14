@@ -306,24 +306,24 @@ export function ProjectCard({
 
             {/* Enhanced Action Buttons - Make sure they're visible */}
             <div className="flex gap-2 w-full mt-2">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onViewTasks(project);
-                }}
-                className="flex-1 py-2 px-3 rounded-lg transition-all hover:scale-105 flex flex-col items-center gap-1 backdrop-blur-sm border"
-                style={{
-                  background: "linear-gradient(135deg, #4A1A4A 0%, #6B2C6B 100%)",
-                  color: "#F4E4BC",
-                  borderColor: "#D4AF37",
-                  fontSize: "12px",
-                  boxShadow: "0 2px 4px #00000040",
-                  minHeight: "60px"
-                }}
-              >
-                <Eye size={16} />
-                <span>Details</span>
-              </button>
+              {/*<button*/}
+              {/*  onClick={(e) => {*/}
+              {/*    e.stopPropagation();*/}
+              {/*    onViewTasks(project);*/}
+              {/*  }}*/}
+              {/*  className="flex-1 py-2 px-3 rounded-lg transition-all hover:scale-105 flex flex-col items-center gap-1 backdrop-blur-sm border"*/}
+              {/*  style={{*/}
+              {/*    background: "linear-gradient(135deg, #4A1A4A 0%, #6B2C6B 100%)",*/}
+              {/*    color: "#F4E4BC",*/}
+              {/*    borderColor: "#D4AF37",*/}
+              {/*    fontSize: "12px",*/}
+              {/*    boxShadow: "0 2px 4px #00000040",*/}
+              {/*    minHeight: "60px"*/}
+              {/*  }}*/}
+              {/*>*/}
+              {/*  <Eye size={16} />*/}
+              {/*  <span>Details</span>*/}
+              {/*</button>*/}
 
               <button
                 onClick={(e) => {
