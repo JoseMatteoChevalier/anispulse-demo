@@ -1,5 +1,19 @@
 # AnisPulse - Stochastic Project Risk Analysis Platform
 
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#)
+[![Vercel](https://img.shields.io/badge/deploy-Vercel-black.svg)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](#)
+[![React](https://img.shields.io/badge/React-18.x-61DAFB.svg)](#)
+[![CI](https://img.shields.io/badge/CI-GitHub%20Actions-blue.svg)](#)
+
+
+<!-- index.html -->
+<meta property="og:title" content="AnisPulse – Stochastic Project Risk Analysis Demo" />
+<meta property="og:description" content="Interactive Gantt, risk analytics, and a clean React/TS stack." />
+<meta property="og:image" content="https://YOUR_DOMAIN/social.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+
 > **Portfolio Demonstration** - Frontend showcase with mathematical modeling architecture
 
 ![Dashboard Overview](./screenshots/dashboard-overview.jpeg)
